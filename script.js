@@ -13,14 +13,13 @@ var speed = 50;
 //function for network error message
 const sent1 = [
   "Your device is not connected.",
-  "Make sure '[___—]' is turned on and in range.",
+  "Make sure '[—]' is turned on and in range.",
   "Now discoverable as '[—]'.",
   "Connection unsuccessful.",
   "Your connection is unstable.",
   "Out of range.",
   "Unexpected device.",
   "Bad connection.",
-  "Whattttttt....",
 ];
 
 const buttonRetry = document.getElementById("button-network");

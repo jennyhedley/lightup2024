@@ -7,8 +7,8 @@ body {
   margin: 2em;
   background: #cbf1e4;
   background-image: linear-gradient(
-    purple,
-    white,
+    black,
+    pink,
     #cbf1e4
   ); /* change the background colour here - you can specify a solid colour, a gradiant or an image - you can find HEX codes for colours at https://htmlcolorcodes.com/ */
   background-image: cover;
