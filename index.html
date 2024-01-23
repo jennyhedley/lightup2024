@@ -1,0 +1,200 @@
+<!-- on the index.html file you can make comments by enclosing them in characters like this -->
+<!-- if you want to ignore some of the code but not delete it, just wrap it in these characters -->
+<!-- use comments to keep track of what your lines of code are meant to do - your future self and anyone else editing your code will thank you -->
+<!-- if you mess up your code, you can copy past the broken bit into ChatGPT https://chat.openai.com/ and ask it to tell you step by step how to fix it - this is not 'cheating' -->
+
+<!-- the following bit of code tells the internet browser how to read the file (do not edit) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- add additional fonts here from https://fonts.google.com/ then when you want to use these fonts you can specify the font name in your stylesheet (style.css) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end of fonts -->
+
+    <!-- title of poem as it should appear in browser tab - edit the text-->
+    <title>Title of Poem</title>
+
+    <!-- import the webpage's stylesheet (do not edit) -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file (do not edit) -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <div class="row">
+    <!-- formatting and words for title of poem - edit the poem title and your name-->
+    <div class="column-wide">
+      <!-- specifies the width of the card -->
+      <div class="card">
+        <h1>Title of Poem</h1>
+        <!-- the h1 header tag is inherited from the page's 'body' style specified in the stylesheet - if you want to change the h1 font you can create a new class in the stylesheet similar to the specified h3 and h5 classes -->
+        <h5>by Your Name</h5>
+        <!-- you can edit the styling of the h5 font in the stylesheet -->
+      </div>
+    </div>
+
+    <!-- formatting and words for network error-->
+    <div class="columnS">
+      <!-- specifies the width of the card-->
+      <div class="cardError">
+        <h3>Annoying messages</h3>
+        <p id="networkError" class="center">Wake up!!!!</p>
+        <hr />
+        <button id="button-network" class="buttonNetwork">Retry</button>
+      </div>
+    </div>
+  </div>
+  <br />
+  <!-- specifices a line break -->
+
+  <body>
+    <div class="row">
+      <!-- formatting and words for phone notes-->
+      <div class="columnL">
+        <!-- specifies the width of the card-->
+        <div class="cardNotes">
+          <p>text text</p>
+          <br />
+          <!--inserts a line break -->
+          <p>write something</p>
+          <br />
+          <p>write something</p>
+          <br />
+          <p>🧩🤾🤿🌄🌠💎🧿🪅❗🏴‍☠️</p>
+          <br />
+          <p>
+            <img
+              src="https://cdn.glitch.global/8789d4c5-b724-48c7-931f-f33ca033f9dd/swift.gif?v=1705898133961"
+            />
+          </p>
+        </div>
+      </div>
+
+      <!-- formatting and words for text message exchanges-->
+      <div class="columnL">
+        <!-- specifies the width of the card-->
+        <div class="cardText">
+          <p class="bubble">hey</p>
+          <p class="bubble">sup</p>
+          <p class="bubble">you miss me</p>
+          <p class="bubble bubble--alt">new phone who dis</p>
+          <p class="bubble bubble--alt">?</p>
+          <p class="bubble">...</p>
+        </div>
+      </div>
+
+      <!-- formatting and words for dropdown poem function-->
+      <div class="columnL">
+        <!-- specifies the width of the card -->
+        <div class="cardDropdown">
+          <!-- edit the cardDropdown class in style.css to change the look -->
+          <!-- title of dropdown poem -- edit the title and the option values, making sure the option values then match up with those in the dropdownFunction in the script.js file-->
+          <h2>Moods got me like</h2>
+          <br />
+          <select id="subject" class="text-box" onchange="dropdownFunction()">
+            <option value="">Select a feeling</option>
+            <option value="flighty">flighty</option>
+            <option value="vague">vague</option>
+            <option value="joyful">joyful</option>
+            <option value="cloudy">cloudy</option>
+            <option value="hangry">hangry</option>
+          </select>
+          <br />
+          <!-- results of dropdown menu go here-->
+          <p id="subject-content"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- formatting and words for haiku function-->
+      <div class="column">
+        <!-- specifies the width of the card-->
+        <div class="cardHaiku">
+          <!-- edit the cardHaiku class in style.css to change the look-->
+          <h4>Garfield is hungry</h4>
+          <!-- once you have replaced the 5 and 7 syllable variables in the script.js file with your own content, 'remix' the poem to see what Haiku generate; once you find three Haiku that you like, replace the below placeholder text by transcribing your poem-->
+          <p id="haiku-1-1">thinking about lasagne</p>
+          <p id="haiku-1-2">the noodles must be wavey</p>
+          <p id="haiku-1-3">i am so hungry</p>
+          <br />
+          <p id="haiku-2-1">jon you are my pet</p>
+          <p id="haiku-2-2">nothing left to do but sleep</p>
+          <p id="haiku-2-3">garfield was in the oven</p>
+          <br />
+          <p id="haiku-3-1">i am so hungry</p>
+          <p id="haiku-3-2">nothing left to do but sleep</p>
+          <p id="haiku-3-3">i am so hungry</p>
+          <!-- button to remix haiku -->
+          <button id="button-haiku" class="buttonHaiku">remix</button>
+        </div>
+      </div>
+
+      <!-- formatting and words for search engine-->
+      <div class="column">
+        <!-- specifies the width of the card-->
+        <div class="cardSearch">
+          <!-- edit the cardSearch class in style.css to change the look-->
+          <img
+            src="https://cdn.glitch.com/02600171-b43e-46dd-a21e-bfc0b9a82267%2Fsearching.gif?v=1620460284530"
+            lt="Searching"
+          />
+          <!-- this image is the 'searching' gif, but you can design a different heading, upload it to 'assets' and replace the above URL -->
+          <br />
+          <input
+            id="text-input"
+            type="text"
+            class="text-box"
+            placeholder="Type a letter"
+            length="1"
+          />
+          <div id="text-wrapper"></div>
+        </div>
+      </div>
+
+      <!-- formatting and words for poem-->
+      <div class="columnXl">
+        <!-- specifies the width of the card -->
+        <div class="cardPoem">
+          <p>Dystopian dreams</p>
+          <hr />
+          <div id="poem" style="text-align: right"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>
