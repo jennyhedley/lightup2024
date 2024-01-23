@@ -20,6 +20,7 @@ const sent1 = [
   "Out of range.",
   "Unexpected device.",
   "Bad connection.",
+  "Whattttttt....",
 ];
 
 const buttonRetry = document.getElementById("button-network");
