@@ -1,0 +1,444 @@
+/* to make comments on the style sheet you need to enclose them within asterisks and slashes like this - comments are useful to remind you what each line of code is for*/
+
+/* style body font - this is the default font if you don't specify a font using one of the header labels (h1, h2, h3, h4)*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 2em;
+  background: #cbf1e4;
+  background-image: linear-gradient(
+    purple,
+    white,
+    #cbf1e4
+  ); /* change the background colour here - you can specify a solid colour, a gradiant or an image - you can find HEX codes for colours at https://htmlcolorcodes.com/ */
+  background-image: cover;
+}
+
+/* font used for dropdown menu - edit this*/
+h2 {
+  font-family: "Kalam", cursive;
+  text-shadow: 1px 1px white;
+  font-size: 30px;
+  font-style: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* header for error code Retry */
+h3 {
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+/* font used for title of haiku - edit this */
+h4 {
+  font-family: "Zen Dots", cursive;
+  font-size: 22px;
+  font-style: bold;
+  text-align: center;
+}
+
+/* font used for byline in header - edit this */
+h5 {
+  font-size: 15px;
+  text-align: 20px right;
+}
+
+/* Style the card for the header */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  border-radius: 10px 10px 10px 10px;
+  background-image: url("https://cdn.glitch.global/1500d7f0-a2c8-489c-88a2-d7899293787b/clouds.jpeg?v=1704340625786");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 1.5em;
+}
+
+/* Style the card for phone error alerts (do not edit)*/
+.cardError {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 5px 3px 15px 3px;
+  line-height: 1em;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 200px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+/* Style the card for notes sections */
+.cardNotes {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 60px 20px 40px 20px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: left;
+  background-color: white;
+  background-image: url("https://cdn.glitch.global/1500d7f0-a2c8-489c-88a2-d7899293787b/notes-bg-black.png?v=1704432785084");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 375px;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+}
+
+/* Style the card for text messages */
+.cardText {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  background-image: url("https://cdn.glitch.global/1500d7f0-a2c8-489c-88a2-d7899293787b/txt-msg.png?v=1704432850592");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+  padding-top: 110px;
+  padding-bottom: 450px;
+  line-height: 0.8em;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Style the card for the dropdown function */
+.cardDropdown {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  padding-bottom: 80px;
+  min-height: 375px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  background-color: white;
+  background-image: url("https://cdn.glitch.com/02600171-b43e-46dd-a21e-bfc0b9a82267%2Fstationery-155143_960_720.png?v=1618796683465"); /* replace this jpg background with an image of your choosing or you can delete this line and just have a plain background */
+  background-position: center;
+  background-size: cover;
+  font-size: 28px;
+  font-family: "Kalam", cursive;
+}
+
+/* Style the card for the haiku function */
+.cardHaiku {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  min-height: 375px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  font-family: "PT Serif", serif; /* font for <p> text */
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Style the card for the search results */
+.cardSearch {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  margin: 0;
+  min-height: 375px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: left;
+  background-color: white;
+}
+
+/* Style the card for the poem function */
+.cardPoem {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  min-height: 375px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: left;
+  background-color: #000000;
+  background-image: url("https://cdn.glitch.com/02600171-b43e-46dd-a21e-bfc0b9a82267%2FcatBG.gif?v=1620459338357"); /* replace this gif background with an image of your choosing or create your own gif at giphy.com using a plain background and adding effects or just delete the background-image property and you can set the background-color to what you want (it's currently black)*/
+  color: #68d911;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+}
+
+/* style button for remixing the haiku*/
+.buttonHaiku {
+  border-radius: 8px;
+  color: #000000;
+  background-color: white;
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  margin: 15px;
+}
+
+/* you can pretty much ignore the rest of the stylesheet code */
+
+/* style button for Network Error */
+.buttonNetwork {
+  cursor: pointer;
+  color: blue;
+  background: white;
+  border: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.1em;
+  text-align: center;
+  position: relative;
+  padding-left: 75px;
+}
+
+/* specify the width of each card - the screen is 100% wide, so you can fit 4 x 25% columns in one row or 3 x 33% columns */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 6px;
+}
+.columnS {
+  float: left;
+  width: 20%;
+  padding: 0 6px;
+}
+.columnL {
+  float: left;
+  width: 33%;
+  padding: 0 6px;
+}
+.columnXl {
+  float: left;
+  width: 50%;
+  padding: 0 6px;
+}
+
+.column-wide {
+  float: left;
+  width: 66%;
+  padding: 0 6px;
+}
+
+.row {
+  margin: 0 -5px; /* Remove extra left and right margins, due to padding in columns */
+  padding-bottom: 20px; /* add spacing between rows */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+/* sets the margins around paragraphs */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* make text glow */
+.glow {
+  text-shadow: rgba(17, 13, 140, 0.9) 0px 0px 36px;
+}
+
+/* change link properties - this is useful if you include any hyperlinks in your code */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+a:active {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/* make images fit within dividers */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+
+/* make text boxes fit within dividers */
+.text-box {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens (do not edit)*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column-wide {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columnS {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columnL {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columnXl {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* text message bubbles */
+.bubble {
+  background-image: linear-gradient(
+    180deg,
+    rgb(210, 244, 254) 25%,
+    rgb(149, 194, 253) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(210, 244, 254) 25%,
+    rgb(149, 194, 253) 100%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(210, 244, 254) 25%,
+    rgb(149, 194, 253) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(210, 244, 254) 25%,
+    rgb(149, 194, 253) 100%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(210, 244, 254) 25%,
+    rgb(149, 194, 253) 100%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.25, rgb(210, 244, 254)),
+    color-stop(1, rgb(149, 194, 253))
+  );
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  /* vendor rules */
+  border-radius: 20px;
+  /* vendor rules */
+  box-shadow: inset 0 5px 5px rgba(255, 255, 255, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.2);
+  /* vendor rules */
+  box-sizing: border-box;
+  clear: both;
+  float: left;
+  margin-bottom: 20px;
+  padding: 8px 30px;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+  width: auto;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.bubble:before,
+.bubble:after {
+  border-radius: 20px / 10px;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.bubble:before {
+  border: 10px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: -7px;
+  z-index: -2;
+}
+
+.bubble:after {
+  border: 8px solid transparent;
+  border-bottom-color: #d2f4fe;
+  bottom: 1px;
+  left: -5px;
+}
+
+.bubble--alt {
+  background-image: linear-gradient(
+    180deg,
+    rgb(172, 228, 75) 25%,
+    rgb(122, 205, 71) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(172, 228, 75) 25%,
+    rgb(122, 205, 71) 100%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(172, 228, 75) 25%,
+    rgb(122, 205, 71) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(172, 228, 75) 25%,
+    rgb(122, 205, 71) 100%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(172, 228, 75) 25%,
+    rgb(122, 205, 71) 100%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.25, rgb(172, 228, 75)),
+    color-stop(1, rgb(122, 205, 71))
+  );
+  float: right;
+}
+
+.bubble--alt:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px / 10px;
+  left: auto;
+  right: -7px;
+}
+
+.bubble--alt:after {
+  border-bottom-color: #ace44b;
+  border-radius: 20px / 10px;
+  left: auto;
+  right: -5px;
+}
+/* end of bubble code */
+
+#poem > div {
+  min-height: 1.2em;
+}
